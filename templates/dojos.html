@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojo Registration</title>
+</head>
+<body>
+<h1>Dojo Registration Form</h1>
+    <p>Please Register As New Ninja</p>
+    <form action="/dojos/new" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- first name_input -->
+                        <label for="first_name">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="first_name" placeholder="first name" name="first_name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- last name_input -->
+                        <label for="last_name">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="last_name" placeholder="last name" name="last_name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Email: -->
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" placeholder="email"  name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Password_input -->
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" placeholder="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Password Confirmation -->
+                        <label for="pw_confirm">PW Confirm:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pw_confirm" placeholder="confirm password" name="pw_confirm" required>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+               
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <br>
+        <p>A short description about yourself:</p>
+        <textarea rows="5" cols="34" name="description" placeholder="type here"></textarea>
+        <br>
+        <label for="favorite_language">Favorite Language:</label>
+        <select name="favorite_language">
+                <option value="Javascript">Javascript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Other">Other</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form> 
+</body>
+</html>
